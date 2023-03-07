@@ -300,18 +300,7 @@ h1 {
   left: 20%;
   font-size: 200%;
 }
-.button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 601px) {
-  .button {
-      position: relative;
-      top: 50%;
-      left: 50%;
-  }
-}
+
 span {
   font-family: 'visby';
   color: #78b6fe;
