@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Visby';
-    src: url('Polices/VisbyRoundCF-Heavy.otf');
+    src:url('assets/font/VisbyRoundCF-Heavy.otf');
 }
 .body{
     height: 100%;
@@ -386,5 +386,20 @@ input{
 @media screen and (max-width: 600px) {
   .box label {
     font-size: 25px;
+  }
+}
+.Titre_annonce{
+  color: #ffffff; 
+  font-family: 'Visby';
+  text-align: center;
+}
+@media screen and (min-width: 601px) {
+  .Titre_annonce {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Titre_annonce {
+    font-size: 22px;
   }
 }
