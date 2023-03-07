@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Visby';
-    src:url('assets/font/VisbyRoundCF-Heavy.otf');
+    font-family:'Visby';
+    src :url('assets/font/VisbyRoundCF-Heavy.otf');
 }
 .body{
     height: 100%;
