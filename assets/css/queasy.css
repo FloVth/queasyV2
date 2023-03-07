@@ -11,6 +11,7 @@ body{
     background-color: #648BC4;
     color: #fff;
 }
+
 /*PETIT ESPACE*/
 .petit-espace{
   padding: 5px;
@@ -25,6 +26,7 @@ body{
     padding: 2px;
   }  
 }
+
 /*Espace*/
 .spacing{
   padding: 10px;
@@ -39,6 +41,7 @@ body{
     padding: 5px;
   }  
 }
+
 /*LOGO DU QUEASY*/
 .responsive-image{
     width: 100%;
@@ -55,7 +58,8 @@ body{
     width: 100px;
   }  
 }
-/* TEXT VOTRE ESPACE*/
+
+/* TEXT VOTRE TITRE (GRAND SOUS-TITRE)*/
 .Votre_Espace{
     color: #ffffff; 
     font-family: 'Visby';
@@ -66,13 +70,13 @@ body{
       font-size: 70px;
     }
 }
-  
   @media screen and (max-width: 600px) {
     .Votre_Espace {
       font-size: 30px;
     }
 }
-/*ZONE PROFIL*/
+
+/*ZONE PROFIL (PAGE ESPACE-ELEVE)*/
 .container{
   background-color: #648BC4;
   margin: 0 auto ;
@@ -87,7 +91,8 @@ body{
     width: 300px;
   }  
 }
-/*TEXT + IMG*/
+
+/*TEXT + IMAGE*/
 /*TEXT*/
 p.profil{
   color: #ffff;
@@ -110,6 +115,7 @@ p.profil{
     padding: 5px 0 0 0 ;
   }
 }
+
 /*IMG*/
 img.profil{
   float: left;
@@ -129,7 +135,8 @@ img.profil{
     padding: 0 0 0 50px;
   }
 }
-/*ZONE PROFIL*/
+
+/*ZONE PROFIL (PAGE ESPACE_ELEVE + ESPACE_ADMIN*/
 p.profil{
   color: #ffff;
   font-family:'Visby';
@@ -151,6 +158,7 @@ p.profil{
     padding: 5px 0 0 0 ;
   }
 }
+
 /*IMG*/
 img.profil{
   float: left;
@@ -170,6 +178,8 @@ img.profil{
     padding: 0 0 0 50px;
   }
 }
+
+/*IMAGE + TEXT RESPONSIVE BOX*/
 /*CORRECTION et RESULTAT */
 .wrapper{
   margin: 150px auto;
@@ -237,7 +247,6 @@ img.profil{
     font-size: 35px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .box h2 {
     font-size: 30px;
@@ -260,35 +269,7 @@ img.profil{
     height: 30%;
   }
 }
-@font-face {
-  font-family: 'Visby';
-  src: url('Polices/VisbyRoundCF-Heavy.otf');
-}
-.body{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.body{
-  background-color: #648BC4;
-  color: white;
-}
-/*LOGO DU QUEASY*/
-.responsive-image{
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-}
-@media screen and (min-width: 601px) {
-.responsive-image {
-  width: 250px;
-}
-}
-@media screen and (max-width: 600px) {
-.responsive-image{
-  width: 100px;
-}  
-}
+
 p.connect1 {
   font-family: 'visby';
   position: absolute;
