@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Visby';
-    src:url('assets/font/VisbyRoundCF-Heavy.otf');
+    src:url('font/VisbyRoundCF-Heavy.otf');
 }
 .body{
     height: 100%;
@@ -223,6 +223,8 @@ img.profil{
   border-radius: 15px;
   display: inline-block;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 /*Responsive de la box*/
 @media (max-width: 684px) {
