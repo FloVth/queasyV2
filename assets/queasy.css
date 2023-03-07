@@ -6,6 +6,8 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    align-items: center;
+    text-align: center;
 }
 body{
     background-color: #648BC4;
@@ -223,8 +225,7 @@ img.profil{
   border-radius: 15px;
   display: inline-block;
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  align-items: center;;
 }
 /*Responsive de la box*/
 @media (max-width: 684px) {
@@ -281,19 +282,7 @@ p.connect1 {
   color: white;
   font-size: clamp(30px, 1vw, 70px)
 }
-img.main {
-  width: 20%;
-  height: 20%;
-  margin-top: 23%;
-  margin-left: 60%;
-}
-@media (max-width: 480px) {
-  img.main {
-      margin-left: 40%;
-      margin-top: 23%;
-  }
-  
-}
+
 h1 {
   font-family: 'visby';
   color: white;
@@ -397,11 +386,18 @@ input{
 }
 @media screen and (min-width: 601px) {
   .Titre_annonce {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 @media screen and (max-width: 600px) {
   .Titre_annonce {
     font-size: 22px;
   }
+}
+.image_accueil{
+  height: 12%;
+  width: 12%;
+  float: right;
+  top:300px;
+
 }
