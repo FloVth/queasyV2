@@ -1,11 +1,9 @@
 
 <?php // Accès à la base de donnée
 $mysqlConnection = new PDO( 
-
-   'mysql:host="https://www.db4free.net/phpMyAdmin/index.php?route=/&route=%2F&db=queasy";dbname=queasy;charset=utf8', 
-
-   'florian', 
-
-   'Flori@n1512' );
+define("SERVER", "https://www.db4free.net/phpMyAdmin/index.php?route=/&route=%2F&db=queasy");
+define("DBNAME", "queasy");
+define("USER", "florian");
+define("PASSWORD", "Flori@n1512");
 ?>
 
