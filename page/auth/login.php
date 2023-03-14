@@ -22,7 +22,7 @@
 
     <!--INPUT MOT DE PASSE-->
     <div class="box">
-        <input type="password" class="myinput" name="mot de passe :"  placeholder="Entrez votre mot de passe" required>
+        <input type="password" class="myinput" name="mot_de_passe :"  placeholder="Entrez votre mot de passe" required>
     </div>
 
     <!--Bouton-->
