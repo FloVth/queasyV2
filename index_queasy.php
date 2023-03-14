@@ -14,7 +14,29 @@
         </div>
         
 <?php
-        
+include("config/database.php");
+if (isset($_SESSION["error"])){
+  ?>
+  <div class="alert alert-danger" role="alert">b
+    <?php 
+      echo $_SESSION["error"];
+      unset($_SESSION["error"]);
+    ?>
+  </div>
+
+  <?php
+}
+if (isset($_SESSION["success"])){
+    ?>
+    <div class="alert alert-success" role="alert">
+      <?php 
+        echo $_SESSION["success"];
+        unset($_SESSION["success"]);
+      ?>
+    </div>
+    <?php
+  }
+
 
   ?>
 <div class="container">
@@ -29,16 +51,32 @@
             case "login":
               include("page/auth/login.php");
               break;
+            case "checklogin":
+              include ("page/auth/checklogin.php");
+              break;
+            case "accueil":
+              include ("page/eleve/accueil.php");
+              break;
                                                  
             default : 
 
           }
+    
+        if(isset($_SESSION["login"])){
+          echo "quelle belle correction";
         }
         else{
-          if(isset($_SESSION["login"])){
-            echo "quelle belle correction";
-          }
+          include("page/auth/login.php");
         }
+    }
+      
+    else{
+      if(isset($_SESSION["login"])){
+        echo "quelle belle correction";
+      }else{
+        include("page/auth/login.php");
+      }
+    }
       ?>
     </div>
   </div>
