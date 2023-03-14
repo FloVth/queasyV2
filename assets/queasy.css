@@ -14,21 +14,6 @@ body{
     color: #fff;
 }
 
-/*PETIT ESPACE*/
-.petit-espace{
-  padding: 5px;
-}
-@media screen and (min-width: 601px) {
-  .petit-espace {
-    padding: 5px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .petit-espace{
-    padding: 2px;
-  }  
-}
-
 /*Espace*/
 .spacing{
   padding: 10px;
@@ -408,7 +393,7 @@ input{
 }
 @media screen and (max-width: 600px) {
   .image_accueil{
-    width: 100px;
+    width: 40%;
     padding-right: 30px;
   }  
 }
