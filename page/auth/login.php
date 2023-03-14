@@ -2,7 +2,7 @@
 <div class="Votre_Espace">Connectez-vous ! </div>
 
 <!--Login-->
-<form action="index.php?route=checklogin" method="post">
+<form action="index_queasy.php?route=checklogin" method="post">
 
     <!--LABEL NOM-->
     <div class="wrappper">
@@ -19,7 +19,7 @@
 
         <!--LOGIN MOT DE PASSE-->
         <div class="box">
-            <label for="mot_de_passe">mot de passe :</label>
+            <label for="mot_de_passe">Mot de passe :</label>
         </div>
 
         <!--INPUT MOT DE PASSE-->

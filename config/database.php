@@ -1,8 +1,8 @@
 
-<?php // Accès à la base de donnée
-define("SERVER", "http://172.20.8.114/adminer.php");
-define("DBNAME", "Queasy");
-define("USER", "Admin");
-define("PASSWORD", "Admin47");
+<?php // Accès à la base de données
+define("SERVER", "localhost" /*"172.20.8.114"*/);
+define("DBNAME","queasy"/*"Queasy"*/);
+define("USER", "root"/*"Admin"*/);
+define("PASSWORD","" /*"Admin47"*/);
 ?>
 

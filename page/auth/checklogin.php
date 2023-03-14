@@ -15,13 +15,13 @@ $user = $requete->fetch();
 if ($user){
   
     $_SESSION["login"]=$_POST["login"];
-    header("location:index.php?route=accueil");
+    header("location:index_queasy.php?route=accueil");
   
 }
 else
 {
     $_SESSION["error"]="identifiant de connexion incorrect";
-    header("location:index.php?route=accueil");
+    header("location:index_queasy.php?route=accueil");
    
 }
 
