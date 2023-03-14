@@ -2,7 +2,7 @@
 <div class="Votre_Espace">Connectez-vous ! </div>
 
 <!--Login-->
-<form>
+
     <!--LABEL NOM-->
     <div class="wrappper">
         <div class="content">
@@ -26,9 +26,8 @@
     </div>
 
     <!--Bouton-->
-    <div class="button">
-        <div class="box">
+    <div class="box">
+        <div class="button">
         <a href="check_login.php" class='btn'>Accéder à mon profil ! </a>
         </div>
     </div>
-</form>     

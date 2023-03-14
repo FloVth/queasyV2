@@ -63,7 +63,7 @@ body{
     }
 }
 
-/*ZONE PROFIL (PAGE ESPACE-ELEVE)*/
+/*ZONE PROFIL (PAGE ESPACE-ELEVE)
 .container{
   background-color: #648BC4;
   margin: 0 auto ;
@@ -78,6 +78,7 @@ body{
     width: 300px;
   }  
 }
+*/
 
 /*TEXT + IMAGE*/
 /*TEXT*/
