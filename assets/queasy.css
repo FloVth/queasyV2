@@ -400,7 +400,6 @@ input{
   bottom: 0;
   width: 12%;
 }
-
 @media screen and (min-width: 601px) {
   .image_accueil{
     width: 12%;
