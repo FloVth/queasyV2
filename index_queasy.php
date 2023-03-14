@@ -2,7 +2,7 @@
 <html>
     <head>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-      <link href="assets/style.css" rel="stylesheet" >
+      <link href="assets/queasy.css" rel="stylesheet" >
       <link href="Polices/VisbyRoundCF-Heavy.otf" rel="stylesheet" type="text/css">
       <link rel="shortcut icon" href="Logo-QUEASY.png"/>
     </head>
@@ -12,29 +12,10 @@
         <div class="responsive-image">
                 <img src="assets/image/Logo-QUEASY.png" alt="Logo du QUEASY" class="responsive-image" width="250" height="250">
         </div>
+        
 <?php
-/*include("config/database.php");
-if (isset($_SESSION["error"])){
-  ?>
-  <div class="alert alert-danger" role="alert">
-    <?php 
-      echo $_SESSION["error"];
-      unset($_SESSION["error"]);
-    ?>
-  </div>
+        
 
-  <?php
-}
-if (isset($_SESSION["success"])){
-    ?>
-    <div class="alert alert-success" role="alert">
-      <?php 
-        echo $_SESSION["success"];
-        unset($_SESSION["success"]);
-      ?>
-    </div>
-    <?php
-  }*/
   ?>
 <div class="container">
   <div class="row">
@@ -54,9 +35,10 @@ if (isset($_SESSION["success"])){
           }
         }
         else{
-
+          if(isset($_SESSION["login"])){
+            echo "quelle belle correction";
+          }
         }
-
       ?>
     </div>
   </div>
@@ -66,5 +48,10 @@ if (isset($_SESSION["success"])){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html> 
+
+
+
+
+
 
 
