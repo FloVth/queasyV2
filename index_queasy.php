@@ -26,7 +26,7 @@
 
               
           switch ($_GET["route"]){
-            case "login-auth":
+            case "login":
               include("page/auth/login.php");
               break;
                                                  
