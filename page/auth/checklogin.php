@@ -18,6 +18,7 @@ if ($user){
 
     $_SESSION["login"]=$_POST["Nom"];
     $_SESSION["prenom"]=$user["prenom_user"];
+    $_SESSION["promo"]=$user["fk_id_promo"];
     if($user["is_admin"]==1){        
         $_SESSION["type"]=1;
         header("location:index_queasy.php?route=accueil_admin");
