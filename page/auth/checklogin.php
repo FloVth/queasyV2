@@ -11,14 +11,13 @@ $requete = $mysqlConnection->prepare('SELECT * FROM user where nom_user = :login
 //execution de la requete
 $requete->execute( ["login"=>$_POST["Nom"],"password"=>$_POST["mot_de_passe"]]);
 session_start();
-$user = $requete->fetchall();
+$user = $requete->fetch();
 $mysqlConnection = null;
 $requete = null;
 if ($user){
 
-    $_SESSION["login"]=$_POST["login"];
-    $_SESSION["mdp"]=$_POST["mot_de_passe"];
-    $_SESSION["prenom"]=["prenom_user"];
+    $_SESSION["login"]=$_POST["Nom"];
+    $_SESSION["prenom"]=$user["prenom_user"];
     if($user["is_admin"]==1){        
         $_SESSION["type"]=1;
         header("location:index_queasy.php?route=accueil_admin");
