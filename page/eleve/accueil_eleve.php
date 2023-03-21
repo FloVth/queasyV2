@@ -39,6 +39,7 @@
                     <img src="" alt="Pictogramme communauty">
                     <h2>Répondre à un QUEASY</h2>
                     <p> Rejoint un QUEASY de ton professeur ou de tes amis.</p>
+                    <a href='#' class="btn"> Répondre ! <i class="fa-solid fa-users"></i></a>
                     
                 </div>
         <!--ZONE DE RESULTAT-->
