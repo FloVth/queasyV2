@@ -4,7 +4,7 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
       <link href="assets/queasy.css" rel="stylesheet" >
       <link href="Polices/VisbyRoundCF-Heavy.otf" rel="stylesheet" type="text/css">
-      <link rel="shortcut icon" href="Logo-QUEASY.png"/>
+      <link rel="shortcut icon" href="assets/image/Logo-QUEASY.png"/>
     </head>
     <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
@@ -54,8 +54,11 @@ if (isset($_SESSION["success"])){
             case "checklogin":
               include ("page/auth/checklogin.php");
               break;
-            case "accueil":
-              include ("page/eleve/accueil.php");
+            case "accueil_eleve":
+              include ("page/eleve/accueil_eleve.php");
+              break;
+            case "accueil_admin":
+              include("page/admin/accueil_admin.php");
               break;
                                                  
             default :

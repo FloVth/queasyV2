@@ -11,18 +11,32 @@ $requete = $mysqlConnection->prepare('SELECT * FROM user where nom_user = :login
 //execution de la requete
 $requete->execute( ["login"=>$_POST["Nom"],"password"=>$_POST["mot_de_passe"]]);
 session_start();
-$user = $requete->fetch();
+$user = $requete->fetchall();
+$mysqlConnection = null;
+$requete = null;
 if ($user){
-  
+
     $_SESSION["login"]=$_POST["login"];
-    header("location:index_queasy.php?route=accueil_eleve");
+    $_SESSION["mdp"]=$_POST["mot_de_passe"];
+    $_SESSION["prenom"]=["prenom_user"];
+    if($user["is_admin"]==1){        
+        $_SESSION["type"]=1;
+        header("location:index_queasy.php?route=accueil_admin");
+    }
+    else{
+        $_SESSION["type"]=0;
+        header("location:index_queasy.php?route=accueil_eleve");
+
+    }
+
+    
   
-}
+    }
 else
 {
     $_SESSION["error"]="identifiant de connexion incorrect";
     header("location:index_queasy.php?route=login");
-   
+
 }
 
 ?>
