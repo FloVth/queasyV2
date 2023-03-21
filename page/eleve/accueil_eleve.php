@@ -26,7 +26,7 @@
             <p>
                 <?php
                     echo $_SESSION["login"]; 
-                    // echo $_SESSION["premon_user"]; 
+                    echo $_SESSION["premon"]
                     // echo $_SESSION["id_promotion"];
                 ?>
             </p>
@@ -45,7 +45,8 @@
                 <div class="box">
                     <img src="" alt="Pictogramme communauty">
                     <h2>Répondre à un QUEASY</h2>
-                    <p> Rejoint un QUEASY</p>
+                    <p> Rejoint un QUEASY de ton professeur ou de tes amis.</p>
+                    
                 </div>
         <!--ZONE DE RESULTAT-->
                 <div class="box">
