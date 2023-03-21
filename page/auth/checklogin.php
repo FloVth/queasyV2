@@ -7,7 +7,7 @@
     );
 
 // ordre de mission
-$requete = $mysqlConnection->prepare('SELECT * FROM user where nom_user = :login and mdp_user=:password ');
+$requete = $mysqlConnection->prepare('SELECT * FROM user INNER JOIN promotion where nom_user = :login and mdp_user=:password and user.fk_id_promotion=promotion.id_promotion');
 //execution de la requete
 $requete->execute( ["login"=>$_POST["Nom"],"password"=>$_POST["mot_de_passe"]]);
 session_start();
@@ -18,7 +18,7 @@ if ($user){
 
     $_SESSION["login"]=$_POST["Nom"];
     $_SESSION["prenom"]=$user["prenom_user"];
-    $_SESSION["promo"]=$user["fk_id_promo"];
+    $_SESSION["promo"]=$user["libelle_promotion"];
     if($user["is_admin"]==1){        
         $_SESSION["type"]=1;
         header("location:index_queasy.php?route=accueil_admin");

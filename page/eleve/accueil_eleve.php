@@ -19,17 +19,10 @@
         <div class="container">
             <div class="profil">
                 <img src="assets/image/pictogramme_edit.png" alt='pictogramme edit profil' class="profil">
-                <p class="profil">Prénom</p>
-                <p class="profil">Nom</p>
-                <p class="profil">Classe</p>
+                <p class="profil"><?php echo $_SESSION["login"]?></p>
+                <p class="profil"><?php echo $_SESSION["prenom"]?></p>
+                <p class="profil"><?php echo $_SESSION["promo"]?></p>
             </div>
-            <p>
-                <?php
-                    echo $_SESSION["login"]; 
-                    echo $_SESSION["prenom"];
-                    echo $_SESSION["promo"];
-                ?>
-            </p>
         </div>
         <!--ZONE CORRECTION-->
         <div class="wrapper">
