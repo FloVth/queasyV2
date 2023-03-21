@@ -26,8 +26,8 @@
             <p>
                 <?php
                     echo $_SESSION["login"]; 
-                    echo $_SESSION["premon"]
-                    // echo $_SESSION["id_promotion"];
+                    echo $_SESSION["prenom"];
+                    echo $_SESSION["promo"];
                 ?>
             </p>
         </div>
