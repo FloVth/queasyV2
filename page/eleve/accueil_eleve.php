@@ -40,6 +40,13 @@
                     <p>Consulter les corrections de vos QUEASY pour apprendre de vos erreurs.</p>
                     <a href='#' class="btn"> voir les corrections ! <i class="fa-regular fa-circle-check"></i></a>
                 </div>
+
+        <!--ZONE REJOINDRE-->
+                <div class="box">
+                    <img src="" alt="Pictogramme communauty">
+                    <h2>Répondre à un QUEASY</h2>
+                    <p> Rejoint un QUEASY</p>
+                </div>
         <!--ZONE DE RESULTAT-->
                 <div class="box">
                     <img src="assets/image/Trophy.png" alt="Pictogramme trophy">
