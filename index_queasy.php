@@ -17,7 +17,7 @@
 include("config/database.php");
 if (isset($_SESSION["error"])){
   ?>
-  <div class="alert alert-danger" role="alert">b
+  <div class="alert alert-danger" role="alert">
     <?php 
       echo $_SESSION["error"];
       unset($_SESSION["error"]);
@@ -58,18 +58,15 @@ if (isset($_SESSION["success"])){
               include ("page/eleve/accueil.php");
               break;
                                                  
-            default : 
-
+            default :
+            if(isset($_SESSION["login"])){
+            echo "quelle belle correction";
+            }
+          else{
+            include("page/auth/login.php");
           }
-    
-        if(isset($_SESSION["login"])){
-          echo "quelle belle correction";
-        }
-        else{
-          include("page/auth/login.php");
         }
     }
-      
     else{
       if(isset($_SESSION["login"])){
         echo "quelle belle correction";
