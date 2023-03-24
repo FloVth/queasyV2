@@ -2,6 +2,11 @@
     font-family: 'Visby';
     src:url('font/VisbyRoundCF-Heavy.otf');
 }
+:root{
+  --blue: #648BC4 ; 
+  --white : #ffffff ; 
+  --police : 'Visby'
+}
 .body{
     height: 100%;
     margin: 0;
@@ -10,8 +15,8 @@
     text-align: center;
 }
 body{
-    background-color: #648BC4;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--white);
 }
 /*LOGO DU QUEASY*/
 .responsive-image{
@@ -48,8 +53,8 @@ body{
 
 /* TEXT VOTRE TITRE (GRAND SOUS-TITRE)*/
 .Votre_Espace{
-    color: #ffffff; 
-    font-family: 'Visby';
+    color:var(--white); 
+    font-family: var(--police);
     text-align: center;
 }
 @media screen and (min-width: 601px) {
@@ -83,7 +88,7 @@ body{
 /*TEXT + IMAGE*/
 /*TEXT*/
 p.profil{
-  color: #ffff;
+  color: var(--white);
   font-family:'Visby';
   text-align: right;
   text-align: justify;
@@ -107,11 +112,11 @@ p.profil{
 
 /*IMG*/
 img.profil{
-  float: left;
   width: 100%;
-  max-width: 150px;
+  max-width: 1500px;
   height: auto;
-  padding: 0 0 0 100px;
+  margin: 0 0 0 300px;
+  
 }
 @media screen and (min-width: 601px) {
   img.profil {
@@ -121,13 +126,12 @@ img.profil{
 @media screen and (max-width: 600px) {
   img.profil {
     width: 90px;
-    padding: 0 0 0 50px;
   }
 }
 
 
 /*IMAGE + TEXT RESPONSIVE BOX*/
-/*CORRECTION et RESULTAT */
+/*CORRECTION + RESULTAT + Repondre*/
 .wrapper{
   margin: 150px auto;
   padding: 0 15%;
@@ -141,32 +145,32 @@ img.profil{
 .box{
   padding: 20px;
   text-align: center;
-  background-color: #648BC4;
+  background-color: var(--blue);
 }
 .box img{
   height: 30%;
 }
 .box h2{
-  color: #ffff;
+  color: var(--white);
   padding: 10px 0;
   font-size: 35px;
-  font-family: 'Visby';
+  font-family: var(--police);
 }
 .box p {
-  color: #ffff;
+  color: var(--white);
   font-size: 20px;
   line-height: 1.6;
-  font-family: 'Visby';
+  font-family: var(--police);
 }
 .btn {
-  color: #648BC4;
-  font-family: 'Visby';
+  color: var(--blue);
+  font-family: var(--police);
   font-size: 20px;
   border: none;
   outline: none;
   margin-top: 15px;
   padding: 8px 15px;
-  background: #fff;
+  background: var(--white);
   border-radius: 15px;
   display: inline-block;
   text-decoration: none;
@@ -231,11 +235,11 @@ img.profil{
   }
 }*/
 .myinput {
-  font-family: Visby;
+  font-family: var(--police);
   resize: none;
   border-radius: 15px;
-  background-color: #ffff;
-  border: 1px solid #648BC4;
+  background-color: var(--white);
+  border: 1px solid var(--blue);
   color: #727272;
   letter-spacing: 2px;
   font-size:  22px;
@@ -254,7 +258,7 @@ input{
   width: 340px;
 }
 .box label{
-  font-family: 'Visby';
+  font-family: var(--police);
   letter-spacing: 2px;
 }
 
@@ -270,8 +274,8 @@ input{
   }
 }
 .Titre_annonce{
-  color: #ffffff; 
-  font-family: 'Visby';
+  color: var(--white); 
+  font-family: var(--police);
   text-align: center;
 }
 @media screen and (min-width: 601px) {

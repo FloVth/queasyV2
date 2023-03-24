@@ -16,8 +16,8 @@
             <div class="spacing"></div>
         </div>
         <!--ZONE DU PROFIL-->
-        <div class="container">
-                <!--<img src="assets/image/pictogramme_edit.png" alt='pictogramme edit profil' class="profil"> -->
+        <div class="contenue_profil">
+                <img class="profil" src="assets/image/pictogramme_edit.png" alt='pictogramme edit profil'>
                 <p class="profil"><?php echo $_SESSION["login"]?></p>
                 <p class="profil"><?php echo $_SESSION["prenom"]?></p>
                 <p class="profil"><?php echo $_SESSION["promo"]?></p>
