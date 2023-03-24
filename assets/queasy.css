@@ -88,19 +88,20 @@ p.profil{
   text-align: right;
   text-align: justify;
   letter-spacing: 2px;
-  line-height: 5px;
-  padding: 10px 0 0 0;
+  line-height: 20px;
+  
 }
 @media screen and (min-width: 601px) {
   p.profil {
-    font-size: 30px;
-  }
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px
+    }
 }
 
 @media screen and (max-width: 600px) {
   p.profil {
-    font-size: 20px;
-    padding: 5px 0 0 0 ;
+    font-size: 30px; 
   }
 }
 
@@ -217,24 +218,6 @@ img.profil{
   }
 }
 
-p.connect1 {
-  font-family: 'visby';
-  position: absolute;
-  top: 45%;
-  left: 44%;
-  font-size:x-large;
-  color: white;
-  font-size: clamp(30px, 1vw, 70px)
-}
-
-h1 {
-  font-family: 'visby';
-  color: white;
-  position: absolute;
-  top: 10%;
-  left: 20%;
-  font-size: 200%;
-}
 /*.button{
   display: flex;
   align-items: center;
