@@ -53,10 +53,7 @@
 			<p><a href="compte utilisateur.php"><?php echo $user_name; ?></a></p>
 </div>
 		
-<div id="retour">
-	<br>
-			<a href="Espace admin.php">Retour au menu principale</a>
-		</div>
+
 
 	</header>
 </body>

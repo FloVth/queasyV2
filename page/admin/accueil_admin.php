@@ -30,7 +30,7 @@
                     <img src="assets/image/adduser.png">
                     <h2>Gérer des élèves</h2>
                     <p>Gérer un groupe de personnes ainsi que leurs promotions, afin de leur envoyer rapidement.</p>
-                    <a href='gerereleve.php' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i>
+                    <a href='index_queasy.php?route=gerer_eleve' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i>
 
                     </a>
                 </div>
@@ -43,10 +43,10 @@
                 </div>
                  <!--ZONE DE NOUVEAU QUIZZ-->
                 <div class="box">
-                    <img src="assests/image/plus.png">
+                    <img src="assets/image/plus.png">
                     <h2>Gérer un nouveau Quizz</h2>
                     <p>Gérer maintenant votre propre quizz 20 questions à créer vous attend.</p>
-                    <a href='creerqueasy.php' class="btn"> Créer mon QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
+                    <a href='index_queasy.php?route=creerqueasy' class="btn"> Créer mon QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
                 </div>
             </div>
         </div>
