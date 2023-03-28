@@ -59,11 +59,10 @@ if (isset($_SESSION["success"])){
               break;
             case "accueil_admin":
               include("page/admin/accueil_admin.php");
+              break; 
+            case "Deconnexion":
+              include("page/auth/Deconnexion.php");
               break;
-            
-              case "Deconnexion":
-                include("page/auth/Deconnexion.php");
-                break;
                                                  
             default :
             if(isset($_SESSION["login"])){
