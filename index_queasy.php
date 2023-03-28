@@ -60,8 +60,11 @@ if (isset($_SESSION["success"])){
             case "accueil_admin":
               include("page/admin/accueil_admin.php");
               break;
-            case "Deconnexion":
-              include("page/auth/Deconnexion.php");
+            case "creerqueasy":
+              include ("page/admin/creerqueasy.php");
+              break;
+            case "gerer_eleve":
+              include ("page/admin/gerereleve.php");
               break;
                                                  
             default :
