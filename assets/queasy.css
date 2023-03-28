@@ -6,7 +6,7 @@
   --blue: #648BC4 ; 
   --white : #ffffff ; 
   --gris-clair: #CECECE; 
-  --police : 'Visby'
+  --police: 'Visby'
 }
 .body{
     height: 100%;
@@ -143,6 +143,10 @@ IMAGE EDIT PROFIL*/
   border-radius: 20px; 
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.edit_profil{
+margin: 0 0 0 390px;
 }
 .montrer {
   display: block;
@@ -345,4 +349,21 @@ input{
     width: 40%;
     padding-right: 30px;
   }  
+}
+
+/*PETIT SOUS TITRE POUR PAGE : CORRECTION/ */
+.petit-titre{
+  color: var(--white); 
+  font-family: var(--police);
+  text-align: left;
+}
+@media screen and (min-width: 601px) {
+  .petit-titre {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .petit-titre {
+    font-size: 22px;
+  }
 }

@@ -43,7 +43,7 @@
                     <img src="assets/image/Check.png" alt="Pictogramme check">
                     <h2>Correction</h2>
                     <p>Consulter les corrections de vos QUEASY pour apprendre de vos erreurs.</p>
-                    <a href='page/eleve/Correction_QUEASY.php' class="btn"> voir les corrections ! <i class="fa-regular fa-circle-check"></i></a>
+                    <a href='index_queasy.php?route=correction_quizz' class="btn"> voir les corrections ! <i class="fa-regular fa-circle-check"></i></a>
                 </div>
         <!--ZONE REJOINDRE-->
                 <div class="box">
