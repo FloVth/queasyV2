@@ -28,7 +28,7 @@
                     <div class="spacing"></div>
                     <div class="spacing"></div>
                     <a href="#" class="edit">Modifie ton mot de passe<a>
-                    <a href="#" class="edit">Déconnexion<a>
+                    <a  href="index_queasy.php?route=Deconnexion" class="edit">Déconnexion<a>
                 </div>
         </div>
         <!--ZONE DU PROFIL-->
@@ -48,7 +48,7 @@
                 </div>
         <!--ZONE REJOINDRE-->
                 <div class="box">
-                    <img src="assets/image/pictogramme_communauty.jpg" alt="Pictogramme communauty">
+                    <img src="assets/image/pictogramme_communauty.png" alt="Pictogramme communauty">
                     <h2>Répondre à un QUEASY</h2>
                     <p> Rejoint un QUEASY de ton professeur ou de tes amis.</p>
                     <a href='#' class="btn"> Répondre ! <i class="fa-solid fa-users"></i></a>
