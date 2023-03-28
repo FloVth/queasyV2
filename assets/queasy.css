@@ -5,6 +5,7 @@
 :root{
   --blue: #648BC4 ; 
   --white : #ffffff ; 
+  --gris-clair: #CECECE; 
   --police : 'Visby'
 }
 .body{
@@ -50,7 +51,6 @@ body{
   }  
 }
 
-
 /* TEXT VOTRE TITRE (GRAND SOUS-TITRE)*/
 .Votre_Espace{
     color:var(--white); 
@@ -89,7 +89,7 @@ body{
 /*TEXT*/
 p.profil{
   color: var(--white);
-  font-family:'Visby';
+  font-family:var(--police);
   text-align: right;
   text-align: justify;
   letter-spacing: 2px;
@@ -100,18 +100,18 @@ p.profil{
   p.profil {
     font-size: 40px;
     text-align: center;
-    margin-top: 20px
+    margin-top: 20px; 
     }
 }
-
 @media screen and (max-width: 600px) {
   p.profil {
     font-size: 30px; 
   }
 }
 
-/*IMG*/
-img.profil{
+/*IMG
+img.
+{
   width: 100%;
   max-width: 1500px;
   height: auto;
@@ -128,7 +128,46 @@ img.profil{
     width: 90px;
   }
 }
+*/
+/*ZONE EDIT PROFIL
+IMAGE EDIT PROFIL*/
 
+/*AJUSTER LIMAGE AU CENTRE 
+
+/*Contenu du menu edit profil */
+.edit_profil-content {
+  display: none;
+  position: absolute;
+  background-color: var(--white); 
+  min-width: 300px;
+  border-radius: 20px; 
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.montrer {
+  display: block;
+}
+/*Affichage de son nom, prenom, promo*/
+.edit_user{
+  color: var(--blue);
+  font-family:'Visby';
+  text-align: center; 
+  font-size : 20px; 
+  text-decoration: none;
+  display: block; 
+  line-height: 10px;
+}
+/*Affichage deconnexion + changer mot de password*/
+.edit{
+  color: var(--blue);
+  font-family:'Visby';
+  text-align: center; 
+  font-size : 20px; 
+  margin-top:10px;
+  text-decoration: none;
+  display: block;
+  text-shadow: 1px 2px var(--gris-clair); 
+}
 
 /*IMAGE + TEXT RESPONSIVE BOX*/
 /*CORRECTION + RESULTAT + Repondre*/
@@ -288,6 +327,7 @@ input{
     font-size: 22px;
   }
 }
+
 .image_accueil{
   position: fixed;
   right: 0;
