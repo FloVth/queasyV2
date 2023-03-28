@@ -78,7 +78,7 @@
             for (i = 0; i < edit_profils.length; i++) {
               var ouvre_edit_profil = edit_profils[i];
               if (ouvre_edit_profil.classList.contains('montrer')) {
-                ouvre_edit_profil.classList.remove('montrer');
+                ouvre_edit_profil.classList.remove('montrer'); //montre le contenu de l'edit user
               }
             }
           }
