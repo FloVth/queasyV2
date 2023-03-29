@@ -4,7 +4,6 @@
         <title>QUEASY | Espace élève</title>
     </head>
     <body>
-        <!--LOGO DU QUEASY-->
         <!--TEXT VOTRE ESPACE-->
         <div class="Votre_Espace">Votre espace</div>
         <!--Zone espace-->
@@ -44,7 +43,7 @@
                     <img src="assets/image/Check.png" alt="Pictogramme check">
                     <h2>Correction</h2>
                     <p>Consulter les corrections de vos QUEASY pour apprendre de vos erreurs.</p>
-                    <a href='#' class="btn"> voir les corrections ! <i class="fa-regular fa-circle-check"></i></a>
+                    <a href='index_queasy.php?route=correction_quizz' class="btn"> voir les corrections ! <i class="fa-regular fa-circle-check"></i></a>
                 </div>
         <!--ZONE REJOINDRE-->
                 <div class="box">
@@ -78,7 +77,7 @@
             for (i = 0; i < edit_profils.length; i++) {
               var ouvre_edit_profil = edit_profils[i];
               if (ouvre_edit_profil.classList.contains('montrer')) {
-                ouvre_edit_profil.classList.remove('montrer');
+                ouvre_edit_profil.classList.remove('montrer'); //montre le contenu de l'edit user
               }
             }
           }

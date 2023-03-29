@@ -59,12 +59,12 @@ if (isset($_SESSION["success"])){
               break;
             case "accueil_admin":
               include("page/admin/accueil_admin.php");
+              break; 
+            case "Deconnexion":
+              include("page/auth/Deconnexion.php");
               break;
-            case "creerqueasy":
-              include ("page/admin/creerqueasy.php");
-              break;
-            case "gerer_eleve":
-              include ("page/admin/gerereleve.php");
+            case "correction_quizz":
+              include ("page/eleve/Correction_QUEASY.php");
               break;
             case "gererqueasy":
               include ("page/admin/gerer_queasy.php");
