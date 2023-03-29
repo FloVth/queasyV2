@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>QUEASY | Espace Admin</title>
+        <title>QUEASY | Espace Admin | Gérer les quizz</title>
     </head>
     <body>
          <!-- ajout de la zone de l'utilisateur -->
@@ -23,30 +23,23 @@
 
             </div>
         </div>
-        <!--ZONE GERER ELEVE-->
+        <!--ZONE GERER LES QUIZZ-->
         <div class="wrapper">
             <div class="content">
                 <div class="box">
-                    <img src="assets/image/adduser.png">
-                    <h2>Gérer des élèves</h2>
-                    <p>Gérez un groupe de personnes ainsi que leurs promotions, afin de leur envoyer rapidement.</p>
+                    <img src="assets/image/plus.png">
+                    <h2>Consulter les quizz</h2>
+                    <p>Consultez vos quizz et consultez les questions déjà existantes !</p>
                     <a href='index_queasy.php?route=gerer_eleve' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i>
 
                     </a>
-                </div>
-        <!--ZONE DE RESULTAT-->
-                <div class="box">
-                    <img src="assets/image/Trophy.png">
-                    <h2>Résultat</h2>
-                    <p>Avec cette fonctionnalité, vous pourrez désormais voir le score des personnes ayant effectué votre quizz.</p>
-                    <a href='/QUEASY/https---github.com-FloVth-Queasy/classement.php' class="btn">voir les résultats ! <i class="fa-solid fa-trophy"></i> </a>
                 </div>
                  <!--ZONE DE NOUVEAU QUIZZ-->
                 <div class="box">
                     <img src="assets/image/plus.png">
                     <h2>Gérer les Queasy</h2>
                     <p>Gérez maintenant et ici tous vos Queasy.</p>
-                    <a href='index_queasy.php?route=gererqueasy' class="btn"> Gérer mes QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
+                    <a href='index_queasy.php?route=creerqueasy' class="btn"> Gérer mes QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
                 </div>
             </div>
         </div>

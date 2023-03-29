@@ -66,6 +66,9 @@ if (isset($_SESSION["success"])){
             case "gerer_eleve":
               include ("page/admin/gerereleve.php");
               break;
+            case "gererqueasy":
+              include ("page/admin/gerer_queasy.php");
+              break;
                                                  
             default :
             if(isset($_SESSION["login"])){

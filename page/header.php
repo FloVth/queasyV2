@@ -50,7 +50,7 @@
 	<header>
 		<div id="user">
 			<img src="<?php echo $user_icon; ?>" alt="Icône utilisateur">
-			<p><a href="compte utilisateur.php"><?php echo $user_name; ?></a></p>
+			<p><a href="compte utilisateur.php"><?php echo $user_name ?></a></p>
 </div>
 		
 
