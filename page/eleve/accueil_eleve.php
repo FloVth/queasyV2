@@ -26,8 +26,8 @@
                     <div class="spacing"></div>
                     <div class="spacing"></div>
                     <div class="spacing"></div>
-                    <a href="#" class="edit">Modifie ton mot de passe<a>
-                    <a  href="index_queasy.php?route=Deconnexion" class="edit">Déconnexion<a>
+                    <a href="index_queasy.php?route=edit_password" class="edit">Modifie ton mot de passe<a>
+                    <a href="index_queasy.php?route=Deconnexion" class="edit">Déconnexion<a>
                 </div>
         </div>
         <!--ZONE DU PROFIL-->

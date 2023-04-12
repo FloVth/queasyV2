@@ -181,7 +181,7 @@ margin: 0 0 0 390px;
   padding-bottom:10px;
 }
 .content{
-  display: grid; /*Diviser une paege en région*/
+  display: grid; /*Diviser une page en région*/
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr) );
 }
