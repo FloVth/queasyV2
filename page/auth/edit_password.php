@@ -1,6 +1,16 @@
 <!--Login-->
 <form action="index_queasy.php?route=edit_password" method="post">
+    <?php
+        include("config/database.php");
+        if(isset($_POST['sumbit'])){
+            $ancien_mot_de_passe = $_POST['ancien_mot_de_passe'];
+            $nouveau_mot_de_passe = $_POST['nouveau_mot_de_passe'];
+            $confirmation_mot_de_passe = $_POST['confirmation_mot_de_passe']
+        }
 
+    $requete = $mysqlConnection->prepare('SELECT * FROM user where nom_user = :login and mdp_user=:password');$
+    
+    ?>
     <!--LABEL ANCIEN MOT DE PASSE-->
     <div class="wrappper">
         <div class="content">
@@ -13,6 +23,12 @@
             <input type="text" class="myinput" name="ancien_mot_de_passe" id="ancien_mot_de_passe" placeholder="Entrez votre nom" required/>
         </div>
 
+        <!--ZONE ESPACE-->
+        <div class="zone-espace">
+            <div class="spacing"></div>
+            <div class="spacing"></div>
+        </div>
+
 
         <!--LABEL NOUVEAU MOT DE PASSE-->
         <div class="box">
@@ -21,6 +37,12 @@
         <!--INPUT NOUVEAU MOT DE PASSE-->
         <div class="box">
             <input type="password" class="myinput" name="nouveau_mot_de_passe" id="nouveau_mot_de_passe"  placeholder="Nouveau mot de passe" required/>
+        </div>
+
+        <!--ZONE ESPACE-->
+        <div class="zone-espace">
+            <div class="spacing"></div>
+            <div class="spacing"></div>
         </div>
 
 
@@ -37,7 +59,7 @@
         <!--Bouton-->
         <div class="box">
             <div class="button">
-            <button type="submit" class='btn'>Accéder à mon profil ! </button>
+            <button type="submit" name="submit" class='btn'>Accéder à mon profil ! </button>
             </div>
         </div>
     </div>
