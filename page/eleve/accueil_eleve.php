@@ -36,6 +36,14 @@
                 <p class="profil"><?php echo $_SESSION["prenom"]?></p>
                 <p class="profil"><?php echo $_SESSION["promo"]?></p>
         </div>
+        <!--Zone espace-->
+        <div class="zone-espace">
+            <div class="spacing"></div>
+            <div class="spacing"></div>
+            <div class="spacing"></div>
+            <div class="spacing"></div>
+            <div class="spacing"></div>
+        </div>
         <!--ZONE CORRECTION-->
         <div class="wrapper">
             <div class="content">

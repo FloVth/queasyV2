@@ -22,11 +22,10 @@
 			</div>
 		</div>
 
-      <!--ZONE DU PROFIL-->
-      <div class="contenue_profil2">
-        <pre class="profil2"><?php echo $_SESSION["login"]?>  <?php echo $_SESSION["prenom"]?></pre>
-      </div>
-
+    <!--ZONE DU PROFIL-->
+    <div class="contenue_profil2">
+      <pre class="profil2"><?php echo $_SESSION["login"]?>  <?php echo $_SESSION["prenom"]?></pre>
+    </div>
 
 		<!--CSS CODE-->
 		<style>
@@ -43,25 +42,25 @@
 			}
 		</style>
 
-        <!--SCRIPT ZONE EDIT USER-->
-        <script>
-        // Si utilisateur clique sur la photo de profil alors affiche de l'edit menu
-        function Profil() {
-          document.getElementById("zone_profil").classList.toggle("montrer");
+    <!--SCRIPT ZONE EDIT USER-->
+    <script>
+    // Si utilisateur clique sur la photo de profil alors affiche de l'edit menu
+    function Profil() {
+      document.getElementById("zone_profil").classList.toggle("montrer");
+    }
+    // Ferme l'edit menu s'il click ailleur que l'image de profil
+    window.onclick = function(event) {
+    if (!event.target.matches('.Image_Profil')) {
+      var edit_profils = document.getElementsByClassName("edit_profil-content"); // On récupere les valeurs se trouvant dans "edit_profil_content"
+      var i;
+      for (i = 0; i < edit_profils.length; i++) {
+        var ouvre_edit_profil = edit_profils[i];
+        if (ouvre_edit_profil.classList.contains('montrer')) {
+            ouvre_edit_profil.classList.remove('montrer'); //montre le contenu de l'edit user
         }
-        // Ferme l'edit menu s'il click ailleur que l'image de profil
-        window.onclick = function(event) {
-          if (!event.target.matches('.Image_Profil')) {
-            var edit_profils = document.getElementsByClassName("edit_profil-content"); // On récupere les valeurs se trouvant dans "edit_profil_content"
-            var i;
-            for (i = 0; i < edit_profils.length; i++) {
-              var ouvre_edit_profil = edit_profils[i];
-              if (ouvre_edit_profil.classList.contains('montrer')) {
-                ouvre_edit_profil.classList.remove('montrer'); //montre le contenu de l'edit user
-              }
-            }
-          }
-        }
-        </script>  
+      }
+     }
+    }
+    </script>  
 	</body>
 </html>

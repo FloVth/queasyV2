@@ -100,7 +100,7 @@ p.profil{
   p.profil {
     font-size: 40px;
     text-align: center;
-    margin-top: 20px; 
+    margin : -45px 5px -50px 0; 
     }
 }
 @media screen and (max-width: 600px) {
