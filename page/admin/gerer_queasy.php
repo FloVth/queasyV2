@@ -34,13 +34,12 @@
 
                     </a>
                 </div>
-                 <!--ZONE DE NOUVEAU QUIZZ-->
-                <div class="box">
-                    <img src="assets/image/plus.png">
-                    <h2>Gérer les Queasy</h2>
-                    <p>Gérez maintenant et ici tous vos Queasy.</p>
-                    <a href='index_queasy.php?route=creerqueasy' class="btn"> Gérer mes QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
-                </div>
+            <!--ZONE DE NOUVEAU QUIZZ-->
+            <div class="box">
+                <img src="assets/image/plus.png">
+                <h2>Gérer les Queasy</h2>
+                <p>Gérez maintenant et ici tous vos Queasy.</p>
+                <a href='index_queasy.php?route=creerqueasy' class="btn"> Gérer mes QUEASY ! <i class="fa-sharp fa-solid fa-circle-plus"></i></a>
             </div>
         </div>
     </body>

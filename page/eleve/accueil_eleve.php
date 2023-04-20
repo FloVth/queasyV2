@@ -26,8 +26,8 @@
                     <div class="spacing"></div>
                     <div class="spacing"></div>
                     <div class="spacing"></div>
-                    <a href="index_queasy.php?route=edit_password" class="edit">Modifie ton mot de passe<a>
-                    <a href="index_queasy.php?route=Deconnexion" class="edit">Déconnexion<a>
+                    <a href="index_queasy.php?route=edit_password" class="edit">Modifie ton mot de passe</a>
+                    <a href="index_queasy.php?route=Deconnexion" class="edit">Déconnexion</a>
                 </div>
         </div>
         <!--ZONE DU PROFIL-->
@@ -58,7 +58,7 @@
                     <img src="assets/image/Trophy.png" alt="Pictogramme trophy">
                     <h2>Résultat</h2>
                     <p>Regarder vos scores et le classement de votre QUEASY.</p>
-                    <a href='#' class="btn">voir les résultats ! <i class="fa-solid fa-trophy"></i> </a>
+                    <a href='#' class="btn">voir les résultats ! <i class="fa-solid fa-trophy"></i></a>
                 </div>
             </div>
         </div>

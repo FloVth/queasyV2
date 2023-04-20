@@ -1,10 +1,8 @@
     <?php 
-    seesion_start();
+    session_start();
 
-    if (isset($_SESSION['id_user'])&& isset($_SESSION['nom_user'])){
-    ?>
-
-
+    if (isset($_SESSION['id_user'])&& isset($_SESSION['nom_user'])){    ?>
+    <title>QUEASY | Modifier mot de passe</title>
     <form action ="edit-password.php" method="post">
         <!--Titre page-->
         <h2>Changer votre mot de passe</h2>

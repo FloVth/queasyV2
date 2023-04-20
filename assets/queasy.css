@@ -186,7 +186,7 @@ margin: 0 0 0 390px;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr) );
 }
 .box{
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   background-color: var(--blue);
 }

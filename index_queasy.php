@@ -66,6 +66,9 @@ if (isset($_SESSION["success"])){
             case "edit_password":
               include("page/auth/edit_password.php");
               break;
+              case "edit-password":
+                include("page/auth/edit-password.php");
+                break;
             case "correction_quizz":
               include ("page/eleve/Correction_QUEASY.php");
               break;
