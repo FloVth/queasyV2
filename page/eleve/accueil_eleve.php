@@ -18,7 +18,13 @@
         <div class="edit_profil">
             <img class="Image_Profil" src="assets/image/pictogramme_edit.png" onclick="Profil()" alt='pictogramme edit profil' >
                 <div id="zone_profil" class="edit_profil-content">
-                  <img class="edit_img" src="assets/image/pictogramme_edit.png" alt='pictogramme edit profil'> <!--sera remplacer par des vrai pdp-->
+                <?php 
+                  if (file_exists("assets/image/". $_SESSION['id'] . "/". $_SESSION['avatar']) && isset($_SESSION['avatar'])){
+                ?> 
+                  <img src="<?=""
+
+                    }
+                  
                     <p class="edit_user">Modifie ta photo de profil</p>
                     <p class="edit_user"><?php echo $_SESSION["login"]?></p>
                     <p class="edit_user"><?php echo $_SESSION["prenom"]?></p>
