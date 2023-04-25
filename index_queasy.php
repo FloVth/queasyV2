@@ -78,7 +78,27 @@ if (isset($_SESSION["success"])){
             case "gererqueasy":
               include ("page/admin/gerer_queasy.php");
               break;
-                                                 
+            case "gerereleve":
+              include ("page/admin/gerereleve.php");
+              break;
+            case "voirlesquizz":
+              include ("page/admin/voirlesquizz.php");
+              break;
+            case "save_questions":
+              include ("page/admin/save_questions.php");
+              break;
+            case "quizz_dejacree":
+              include ("page/admin/quizz_dejacree.php");
+              break;
+            case "creerqueasy":
+              include ("page/admin/creerqueasy.php");
+              break;  
+            case "afficher_quizz":
+              include ("page/admin/afficher_quizz.php");
+              break;
+
+                         
+                
             default :
             if(isset($_SESSION["login"])){
             echo "quelle belle correction";

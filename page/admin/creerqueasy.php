@@ -57,7 +57,7 @@
   }
 </style>
 
-        <form method="post" action="page/admin/save_questions.php">
+        <form method="post" action="index_queasy.php?route=save_questions">
   <div class="form-group">
     <label for="quiz_name">Nom du quizz :</label>
     <input type="text" class="form-control" id="quiz_name" name="quiz_name">
