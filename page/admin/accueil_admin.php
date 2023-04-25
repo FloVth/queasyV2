@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <title>QUEASY | Espace Admin</title>
     </head>
     <body>
@@ -28,7 +29,7 @@
                     <img src="assets/image/adduser.png">
                     <h2>Gérer des élèves</h2>
                     <p>Gérez un groupe de personnes ainsi que leurs promotions, afin de leur envoyer rapidement.</p>
-                    <a href='index_queasy.php?route=gerer_eleve' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i></a>
+                    <a href='index_queasy.php?route=gerereleve' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i></a>
                 </div>
 
         <!--ZONE DE RESULTAT-->

@@ -1,4 +1,18 @@
-<body>
+    <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <linK rel="stylesheet" href="espace_eleve.css"> 
+        <link href="Polices/VisbyRoundCF-Heavy.otf" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--favicon-->
+        <link rel="shortcut icon" href="Logo-QUEASY.png"/>
+        <title>QUEASY | Espace Admin</title>
+    </head>
+    <body>
         <!--LOGO DU QUEASY-->
         <?php include 'page/header.php'; ?>
         
@@ -118,11 +132,6 @@
 </div>
 
 
-
-<!-- EN gros le code là permet d'ajouter des élèves, on peut pas les surpimer car c'est le 
-brodel avec CSV, j'ai essayer de faire en sorte de pas créer de doublon mais j'ai du mal en gros si on recharge la page ça en créer plus mais si on appuis intentionnelelemtn 
-sur le bouton submit alors que l'élève est déjà créer ça le recrée. -->
-
 <div class="fondlist">
 <?php
 // Vérifie que le formulaire a été soumis
@@ -182,3 +191,4 @@ while (($data = fgetcsv($fichier)) !== false) {
 </div>
 </div>
     </body>
+</html>
