@@ -93,8 +93,7 @@ p.profil{
   text-align: right;
   text-align: justify;
   letter-spacing: 2px;
-  line-height: 20px;
-  
+  line-height: 20px;  
 }
 @media screen and (min-width: 601px) {
   p.profil {
