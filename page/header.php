@@ -24,7 +24,7 @@
 
     <!--ZONE DU PROFIL-->
     <div class="contenue_profil2">
-      <pre class="profil2"><?php echo $_SESSION["login"]?>  <?php echo $_SESSION["prenom"]?></pre>
+      <pre class="profil2"><?php echo $_SESSION["login"]?> <?php echo $_SESSION["prenom"]?></pre>
     </div>
 
 		<!--CSS CODE-->
