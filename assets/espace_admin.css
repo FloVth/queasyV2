@@ -1,0 +1,261 @@
+
+
+@font-face {
+    font-family: 'Visby';
+    src: url('Polices/VisbyRoundCF-Heavy.otf');
+}
+.body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #648BC4;
+    color: #fff;
+}
+/*PETIT ESPACE*/
+.petit-espace{
+  padding: 5px;
+}
+@media screen and (min-width: 601px) {
+  .petit-espace {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .petit-espace{
+    padding: 2px;
+  }  
+}
+/*Espace*/
+.spacing{
+  padding: 10px;
+}
+@media screen and (min-width: 601px) {
+  .spacing {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .spacing{
+    padding: 5px;
+  }  
+}
+/*LOGO DU QUEASY*/
+.responsive-image{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+@media screen and (min-width: 601px) {
+  .responsive-image {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .responsive-image{
+    width: 100px;
+  }  
+}
+/* TEXT VOTRE ESPACE*/
+.Votre_Espace{
+    color: #ffffff; 
+    font-family: 'Visby';
+    text-align: center;
+}
+@media screen and (min-width: 601px) {
+    .Votre_Espace {
+      font-size: 70px;
+    }
+}
+  
+  @media screen and (max-width: 600px) {
+    .Votre_Espace {
+      font-size: 30px;
+    }
+}
+/*ZONE PROFIL*/
+.container{
+  background-color: #648BC4;
+  margin: 0 auto ;
+}
+@media screen and (min-width:601px){
+  .container{
+    width: 600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container{
+    width: 300px;
+  }  
+}
+/*TEXT + IMG*/
+/*TEXT*/
+p.profil{
+  color: #ffff;
+  font-family:'Visby';
+  text-align: right;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 5px;
+  padding: 10px 0 0 0;
+}
+@media screen and (min-width: 601px) {
+  p.profil {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.profil {
+    font-size: 20px;
+    padding: 5px 0 0 0 ;
+  }
+}
+/*IMG*/
+img.profil{
+  float: left;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  padding: 0 0 0 100px;
+}
+@media screen and (min-width: 601px) {
+  img.profil {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  img.profil {
+    width: 90px;
+    padding: 0 0 0 50px;
+  }
+}
+/*ZONE PROFIL*/
+p.profil{
+  color: #ffff;
+  font-family:'Visby';
+  text-align: right;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 5px;
+  padding: 10px 0 0 0;
+}
+@media screen and (min-width: 601px) {
+  p.profil {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p.profil {
+    font-size: 20px;
+    padding: 5px 0 0 0 ;
+  }
+}
+/*IMG*/
+img.profil{
+  float: left;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  padding: 0 0 0 100px;
+}
+@media screen and (min-width: 601px) {
+  img.profil {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  img.profil {
+    width: 90px;
+    padding: 0 0 0 50px;
+  }
+}
+
+/*CORRECTION et RESULTAT */
+.wrapper{
+  margin: 150px auto;
+  padding: 0 15%;
+  padding-bottom:10px;
+}
+.content{
+  display: grid; /*Diviser une paege en région*/
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr) );
+}
+.box{
+  padding: 20px;
+  text-align: center;
+  background-color: #648BC4;
+}
+.box img{
+  height: 30%;
+}
+.box h2{
+  color: #ffff;
+  padding: 10px 0;
+  font-size: 35px;
+  font-family: 'Visby';
+}
+.box p {
+  color: #ffff;
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: 'Visby';
+}
+.btn {
+  color: #648BC4;
+  font-family: 'Visby';
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #fff;
+  border-radius: 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+/*Responsive de la box*/
+@media (max-width: 684px) {
+  .wrapper {
+    padding: 5px;
+  }
+}
+/* Responsive img*/
+@media screen and (min-width: 601px) {
+  .box img {
+    height: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .box img {
+    height: 25%;
+  }
+}
+/*Responsive h2*/
+@media screen and (min-width: 601px) {
+  .box h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box h2 {
+    font-size: 30px;
+  }
+}
+/*Responsive p*/
+@media screen and (min-width: 601px) {
+  .box p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box p {
+    font-size: 20px;
+  }
+}
+
