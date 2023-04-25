@@ -76,5 +76,5 @@
     </form>
 <?php 
 }else{
-    header("location:index_queasy.php?route=login");
+    header("location:index_queasy.php?route=edit-password");
 }?>
