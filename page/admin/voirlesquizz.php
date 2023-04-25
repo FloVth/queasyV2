@@ -2,7 +2,7 @@
 
     <body>
     <?php
-    include("config/database.php");
+  
     $mysqlConnection = new PDO(
     'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8',
     USER,
@@ -10,48 +10,39 @@
     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
   )
 ?>
-        <!--LOGO DU QUEASY-->
-        <?php include 'page/utilisateur.php'; ?>
-        
+ <!-- ajout de la zone de l'utilisateur -->
+ <?php include 'page/header.php' ?>
+    
         <div class="Votre_Espace">Vos Queasy déjà créés</div>
 
       <?php
 
 
 
-  // Récupérer les titres et les IDs des quiz depuis la base de données
-  $requete = $mysqlConnection->prepare('SELECT id_quizz, titre FROM quizz');
-  //execution de la requete
-  $requete->execute();
+   // Récupérer les titres et les IDs des quiz depuis la base de données
+   $requete = $mysqlConnection->prepare('SELECT id_quizz, titre FROM quizz');
+   //execution de la requete
+   $requete->execute();
+  
+   $quizz = $requete->fetchAll();
+   $mysqlConnection = null;
+   $requete = null;
+  
+   ?>
  
-  $quizz = $requete->fetchAll();
-  $mysqlConnection = null;
-  $requete = null;
- 
-  ?>
+ <div class="container">
+     <div class="row justify-content-center">
+         <?php foreach ($quizz as $ligne) { ?>
+             <div class="col-md-4 mb-3">
+                 <div class="card h-100 border border-dark">
+                     <div class="card-body d-flex flex-column justify-content-between">
+                         <h5 class="card-title"><?= $ligne["titre"] ?></h5>
+                         <a href="index_queasy.php?route=afficher_quizz&id=<?= $ligne["id_quizz"] ?>" class="btn btn-primary align-self-end">Voir</a>
 
 
-    
-  </div>
-  <div class="row">
-    <div class="col">
-    <table class="table">
-    <thead>
-        <tr>
-        <th scope="col">#</th>
-        <th scope="col">Titre</th>
- 
-        <th scope="col">Action</th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php
-        foreach ($quizz as $ligne){
-            ?>  
-            <tr>
-                <th scope="row"><?= $ligne["id_quizz"] ?></th>
-                <td><?= $ligne["titre"]?></td>
-   <td><a href='montrerquizz.php?id=<?= $ligne["id_quizz"] ?>'> Voir </a>
-                <?php
-        }
-        ?>
+                     </div>
+                 </div>
+             </div>
+         <?php } ?>
+     </div>
+ </div>

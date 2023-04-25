@@ -30,7 +30,7 @@
                     <img src="assets/image/plus.png">
                     <h2>Consulter les quizz</h2>
                     <p>Consultez vos quizz et consultez les questions déjà existantes !</p>
-                    <a href='index_queasy.php?route=gerer_eleve' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i>
+                    <a href='index_queasy.php?route=voirlesquizz' class="btn"> Ajouter ! <i class="fa-solid fa-user-plus"></i>
 
                     </a>
                 </div>
