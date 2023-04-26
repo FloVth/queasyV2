@@ -18,20 +18,7 @@
         <div class="edit_profil">
             <img class="Image_Profil" src="assets/image/pictogramme_edit.png" onclick="Profil()" alt='pictogramme edit profil' >
                 <div id="zone_profil" class="edit_profil-content">
-                  <?php
-                    //AVATAR
-                    //si tout existe alors récupere l'image
-                    if (file_exists("public/avatars/". $_SESSION['id_user'] . "/". $_SESSION['avatar']) && isset($_SESSION['avatar'])){
-                  ?>
-                      <img src="<?= "public/avatars/". $_SESSION['id_user'] . "/".  $_SESSION['avatar']; ?>"/>
-                  <?php
-                  //SINON IMAGE PAR DEFAUT
-                    }else{
-                  ?>
-                      <img src="public/avatars/default/pictogramme_edit.png"/> 
-                  <?php
-                    }
-                  ?>
+            
                   <!-- INFORMATION UTILISATEUR-->
                     <a href="index_queasy.php?route=avatar" class="edit_user"> Modifie ta photo de profil</a>
                     <div class="spacing"></div>
@@ -105,7 +92,7 @@
             }
           }
         }
-        </script>     
+        </script>  
     </body>
 </html>
 

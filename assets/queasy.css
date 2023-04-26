@@ -216,7 +216,7 @@ margin: 0 0 0 390px;
   border-radius: 15px;
   display: inline-block;
   text-decoration: none;
-  align-items: center;;
+  align-items: center;
 }
 /*Responsive de la box*/
 @media (max-width: 684px) {
