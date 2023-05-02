@@ -191,6 +191,25 @@ while (($data = fgetcsv($fichier)) !== false) {
   }
 }
 ?>
+
+
+
+<?php
+// Récupérer le message de confirmation s'il y en a un
+$messageeleve = "";
+if (isset($_GET['message'])) {
+    $messageeleve = $_GET['message'];
+}
+?>
+
+<!-- Afficher le message de confirmation si nécessaire -->
+<?php if (!empty($messageeleve)): ?>
+    <div style="text-align:center; font-size: 100px; color: #9FE855;">
+        <?php echo $messageeleve; ?>
+    </div>
+<?php endif; ?>
+
+
 </div>
 </div>
     </body>
