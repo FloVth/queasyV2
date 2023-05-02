@@ -5,6 +5,7 @@
 :root{
   --blue: #648BC4 ; 
   --white : #ffffff ; 
+  --red: #ff0000 ; 
   --gris-clair: #CECECE; 
   --police: 'Visby'
 }
@@ -366,7 +367,6 @@ input{
     font-size: 22px;
   }
 }
-
 
 /* pour HotDog ajouter ses css Admin en se basant de son espace admin ect */
 
