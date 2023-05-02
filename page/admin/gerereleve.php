@@ -103,7 +103,7 @@
 
 
 
-        <!-- Vider la table est trop compliquer en CSV, avec les autres outils ce sera surement plus simple -->
+     
 
         <div class="form-container">
   <form method="POST">
@@ -122,6 +122,17 @@
     <button class="form-submit" type="submit">Ajouter l'élève</button>
 </form>
 </div>
+
+
+<?php
+    $mysqlConnection = new PDO(
+        'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8',
+        USER,
+        PASSWORD,
+        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
+    );
+
+?>
 
 
 <div class="fondlist">

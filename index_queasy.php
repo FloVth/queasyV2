@@ -93,6 +93,9 @@ if (isset($_SESSION["success"])){
             case "afficher_quizz":
               include ("page/admin/afficher_quizz.php");
               break;
+            case "save_eleves":
+                include ("page/admin/save_eleves.php");
+                break;
 
                          
                 
