@@ -132,27 +132,37 @@
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
     );
 
-?>
-
-<?
  
   $requete = $mysqlConnection->query("SELECT nom, prenom, promotion, code FROM eleve");
-
+$eleve= $requete->fetch();
  
   echo "<table>";
 
-  
-  while ($eleve = $requete->fetch()) {
-    echo "<tr>";
-    echo "<td>" . $eleve['nom'] . "</td>";
-    echo "<td>" . $eleve['prenom'] . "</td>";
-    echo "<td>" . $eleve['promotion'] . "</td>";
-    echo "<td>" . $eleve['code'] . "</td>";
-    echo "</tr>";
-  }
+?>  
+<div class="row justify-content-center">
+  <div class="col-8">
+      <table class="table text-center">
+          <thead>
+              <tr>
+                  <th scope="col">Prénom</th>
+                  <th scope="col">Nom</th>
+              </tr>
+          </thead>
+          <tbody>
+              <?php foreach ($eleve as $ligne) { ?>
+                  <tr>
+                      <td><?= $ligne["nom"] ?></td>
+                      <td><?= $ligne["prenom"]?></td>
+                  </tr>
+              <?php } ?>
+          </tbody>
+      </table>
+  </div>
+</div>
+
 
  
- 
+<?php
 
  
   echo "</table>";
