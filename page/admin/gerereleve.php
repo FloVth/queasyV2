@@ -134,9 +134,9 @@
 
  
   $requete = $mysqlConnection->query("SELECT nom, prenom, promotion, code FROM eleve");
-$eleve= $requete->fetch();
+  $eleves = $requete->fetchAll();
  
-  echo "<table>";
+  
 
 ?>  
 <div class="row justify-content-center">
@@ -146,15 +146,20 @@ $eleve= $requete->fetch();
               <tr>
                   <th scope="col">Prénom</th>
                   <th scope="col">Nom</th>
+                  <th scope="col">Promotion</th>
+                  <th scope="col">Code</th>
               </tr>
           </thead>
           <tbody>
-              <?php foreach ($eleve as $ligne) { ?>
-                  <tr>
-                      <td><?= $ligne["nom"] ?></td>
-                      <td><?= $ligne["prenom"]?></td>
-                  </tr>
-              <?php } ?>
+          <?php foreach ($eleves as $ligne) { ?>
+    <tr>
+        <td><?= $ligne["prenom"] ?></td>
+        <td><?= $ligne["nom"] ?></td>
+        <td><?= $ligne["promotion"] ?></td>
+        <td><?= $ligne["code"] ?></td>
+    </tr>
+<?php } ?>
+
           </tbody>
       </table>
   </div>
@@ -165,25 +170,11 @@ $eleve= $requete->fetch();
 <?php
 
  
-  echo "</table>";
+
 
 ?>
 
 
-<?php
- 
-$messageeleve = "";
-if (isset($_GET['message'])) {
-    $messageeleve = $_GET['message'];
-}
-?>
-
-<!-- Afficher le message de confirmation si nécessaire -->
-<?php if (!empty($messageeleve)): ?>
-    <div style="text-align:center; font-size: 100px; color: #9FE855;">
-        <?php echo $messageeleve; ?>
-    </div>
-<?php endif; ?>
 
 
 </div>

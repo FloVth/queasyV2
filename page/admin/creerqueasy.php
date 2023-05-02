@@ -72,14 +72,7 @@ if (isset($_GET['message'])) {
 }
 ?>
 
-<!-- Afficher le message de confirmation si nécessaire -->
-<?php if (!empty($messagequizz)): ?>
-    <div style="text-align:center; font-size: 100px; color: #9FE855;">
-        <?php echo $messagequizz; ?>
-    </div>
-<?php endif; ?>
-
-<!-- Le reste de votre code pour la création de quizz -->
-
+ 
+ 
 </body>
 </html>
