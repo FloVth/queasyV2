@@ -134,68 +134,34 @@
 
 ?>
 
+<?
+ 
+  $requete = $mysqlConnection->query("SELECT nom, prenom, promotion, code FROM eleve");
 
-<div class="fondlist">
-<?php
-// Vérifie que le formulaire a été soumis
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Récupère les valeurs soumises par l'utilisateur
-  $nom = $_POST["nom"];
-  $prenom = $_POST["prenom"];
-  $promotion = $_POST["promotion"];
-  $code = $_POST["code"];
-
-  // Ouverture du fichier CSV en mode ajout
-  $fichier = fopen("eleves.csv", "a");
-
-  // Vérifie si l'élève n'existe pas déjà dans le fichier
-  $eleveExiste = false;
-  if (($handle = fopen("eleves.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handle)) !== FALSE) {
-      if ($data[0] == $nom && $data[1] == $prenom && $data[2] == $promotion && $data[3] == $code) {
-        $eleveExiste = true;
-        break;
-      }
-    }
-    fclose($handle);
-  }
-
-  // Ajoute l'élève seulement s'il n'existe pas déjà dans le fichier
-  if (!$eleveExiste) {
-    // Écriture des données de l'élève dans le fichier CSV
-    fputcsv($fichier, array($nom, $prenom, $promotion, $code));
-
-    // Fermeture du fichier CSV
-    fclose($fichier);
-  }
-}
-
-// Ouverture du fichier CSV en mode lecture
-$fichier = fopen("eleves.csv", "r");
-
-// Vérifie que le fichier a été ouvert avec succès
-if ($fichier !== false) {
-  // Début de la table HTML
+ 
   echo "<table>";
-}
-while (($data = fgetcsv($fichier)) !== false) {
-  // Vérification du nombre d'éléments dans la ligne
-  if (count($data) === 4) {
-    // Affichage des données dans la table HTML
+
+  
+  while ($eleve = $requete->fetch()) {
     echo "<tr>";
-    echo "<td>" . $data[0] . "</td>";
-    echo "<td>" . $data[1] . "</td>";
-    echo "<td>" . $data[2] . "</td>";
-    echo "<td>" . $data[3] . "</td>";
+    echo "<td>" . $eleve['nom'] . "</td>";
+    echo "<td>" . $eleve['prenom'] . "</td>";
+    echo "<td>" . $eleve['promotion'] . "</td>";
+    echo "<td>" . $eleve['code'] . "</td>";
     echo "</tr>";
   }
-}
+
+ 
+ 
+
+ 
+  echo "</table>";
+
 ?>
 
 
-
 <?php
-// Récupérer le message de confirmation s'il y en a un
+ 
 $messageeleve = "";
 if (isset($_GET['message'])) {
     $messageeleve = $_GET['message'];
