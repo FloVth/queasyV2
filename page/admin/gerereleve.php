@@ -103,7 +103,7 @@
 
 
 
-        <!-- Vider la table est trop compliquer en CSV, avec les autres outils ce sera surement plus simple -->
+     
 
         <div class="form-container">
   <form method="POST">
@@ -124,62 +124,59 @@
 </div>
 
 
-<div class="fondlist">
 <?php
-// Vérifie que le formulaire a été soumis
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Récupère les valeurs soumises par l'utilisateur
-  $nom = $_POST["nom"];
-  $prenom = $_POST["prenom"];
-  $promotion = $_POST["promotion"];
-  $code = $_POST["code"];
+    $mysqlConnection = new PDO(
+        'mysql:host='.SERVER.';dbname='.DBNAME.';charset=utf8',
+        USER,
+        PASSWORD,
+        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
+    );
 
-  // Ouverture du fichier CSV en mode ajout
-  $fichier = fopen("eleves.csv", "a");
+ 
+  $requete = $mysqlConnection->query("SELECT nom, prenom, promotion, code FROM eleve");
+  $eleves = $requete->fetchAll();
+ 
+  
 
-  // Vérifie si l'élève n'existe pas déjà dans le fichier
-  $eleveExiste = false;
-  if (($handle = fopen("eleves.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handle)) !== FALSE) {
-      if ($data[0] == $nom && $data[1] == $prenom && $data[2] == $promotion && $data[3] == $code) {
-        $eleveExiste = true;
-        break;
-      }
-    }
-    fclose($handle);
-  }
+?>  
+<div class="row justify-content-center">
+  <div class="col-8">
+      <table class="table text-center">
+          <thead>
+              <tr>
+                  <th scope="col">Prénom</th>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Promotion</th>
+                  <th scope="col">Code</th>
+              </tr>
+          </thead>
+          <tbody>
+          <?php foreach ($eleves as $ligne) { ?>
+    <tr>
+        <td><?= $ligne["prenom"] ?></td>
+        <td><?= $ligne["nom"] ?></td>
+        <td><?= $ligne["promotion"] ?></td>
+        <td><?= $ligne["code"] ?></td>
+    </tr>
+<?php } ?>
 
-  // Ajoute l'élève seulement s'il n'existe pas déjà dans le fichier
-  if (!$eleveExiste) {
-    // Écriture des données de l'élève dans le fichier CSV
-    fputcsv($fichier, array($nom, $prenom, $promotion, $code));
+          </tbody>
+      </table>
+  </div>
+</div>
 
-    // Fermeture du fichier CSV
-    fclose($fichier);
-  }
-}
 
-// Ouverture du fichier CSV en mode lecture
-$fichier = fopen("eleves.csv", "r");
+ 
+<?php
 
-// Vérifie que le fichier a été ouvert avec succès
-if ($fichier !== false) {
-  // Début de la table HTML
-  echo "<table>";
-}
-while (($data = fgetcsv($fichier)) !== false) {
-  // Vérification du nombre d'éléments dans la ligne
-  if (count($data) === 4) {
-    // Affichage des données dans la table HTML
-    echo "<tr>";
-    echo "<td>" . $data[0] . "</td>";
-    echo "<td>" . $data[1] . "</td>";
-    echo "<td>" . $data[2] . "</td>";
-    echo "<td>" . $data[3] . "</td>";
-    echo "</tr>";
-  }
-}
+ 
+
+
 ?>
+
+
+
+
 </div>
 </div>
     </body>

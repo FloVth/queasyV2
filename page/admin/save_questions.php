@@ -32,7 +32,7 @@ include("config/database.php");
 $mysqlConnection = null;
 $requete = null;
 $_SESSION["success"]="Votre quizz a bien été créé !";
-header("Location: index_queasy.php?route=creerqueasy.php?message=".urlencode($message));
+header("Location: index_queasy.php?route=creerqueasy.php?message=".urlencode($messagequizz));
 exit();
  
  }

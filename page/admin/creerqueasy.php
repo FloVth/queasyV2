@@ -66,20 +66,13 @@
 
 <?php
 // Récupérer le message de confirmation s'il y en a un
-$message = "";
+$messagequizz = "";
 if (isset($_GET['message'])) {
-    $message = $_GET['message'];
+    $messagequizz = $_GET['message'];
 }
 ?>
 
-<!-- Afficher le message de confirmation si nécessaire -->
-<?php if (!empty($message)): ?>
-    <div style="text-align:center; font-size: 100px; color: #9FE855;">
-        <?php echo $message; ?>
-    </div>
-<?php endif; ?>
-
-<!-- Le reste de votre code pour la création de quizz -->
-
+ 
+ 
 </body>
 </html>
